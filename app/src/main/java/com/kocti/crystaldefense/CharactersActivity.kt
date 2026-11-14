@@ -44,8 +44,8 @@ class CharactersActivity : Activity() {
         val state = store.load()
         val selected = store.selectedSpecies()
         list.removeAllViews()
-        list.addView(label(getString(R.string.characters_title), sizeSp = 24f, bold = true))
-        list.addView(label(getString(R.string.characters_rules)), matchWidth(dp(4)))
+        list.addView(screenTitle(getString(R.string.characters_title)))
+        list.addView(label(getString(R.string.characters_rules), color = getColor(R.color.text_muted)), matchWidth(dp(4)))
         val missing = mutableListOf<CreatureForm>()
         for (species in Species.entries) {
             val progress = state.progressOf(species.name)
@@ -76,10 +76,10 @@ class CharactersActivity : Activity() {
             setPadding(dp(14), dp(14), dp(14), dp(14))
 
             val nextForm = FORM_LEVELS.getOrNull(formIndexForLevel(progress.level) + 1)
-            addView(label(species.title, sizeSp = 20f, bold = true))
-            addView(label(getString(R.string.character_form, form.name, progress.level), bold = true))
-            addView(label(species.description, sizeSp = 13f), matchWidth(dp(2)))
-            addView(label(getString(R.string.character_chain, species.forms.joinToString(" → ") { it.name }), sizeSp = 13f), matchWidth(dp(2)))
+            addView(label(species.title, sizeSp = 21f, bold = true))
+            addView(label(getString(R.string.character_form, form.name, progress.level), bold = true, color = getColor(R.color.accent)))
+            addView(label(species.description, sizeSp = 13f, color = getColor(R.color.text_muted)), matchWidth(dp(2)))
+            addView(label(getString(R.string.character_chain, species.forms.joinToString(" → ") { it.name }), sizeSp = 13f, color = getColor(R.color.text_muted)), matchWidth(dp(2)))
             addView(
                 label(
                     if (nextForm != null) {
@@ -88,18 +88,19 @@ class CharactersActivity : Activity() {
                         getString(R.string.character_final_form)
                     },
                     sizeSp = 13f,
+                    color = getColor(R.color.text_muted),
                 ),
                 matchWidth(dp(2)),
             )
-            addView(label(getString(R.string.character_beats, species.beats().title), sizeSp = 13f), matchWidth(dp(2)))
+            addView(label(getString(R.string.character_beats, species.beats().title), sizeSp = 13f, color = getColor(R.color.text_muted)), matchWidth(dp(2)))
 
             val vitals = progress.vitals
-            addView(statRow(getString(R.string.stat_health), maxHealth(progress.level), max = MAX_HEALTH_BAR), matchWidth(dp(8)))
-            addView(statRow(getString(R.string.stat_sleep), vitals.sleep), matchWidth())
-            addView(statRow(getString(R.string.stat_hunger), vitals.hunger), matchWidth())
-            addView(statRow(getString(R.string.stat_sadness), vitals.sadness), matchWidth())
-            addView(statRow(getString(R.string.stat_joy), vitals.joy), matchWidth())
-            addView(statRow(getString(R.string.stat_strength), strengthOf(species, progress.level, progress.vitals), max = MAX_STRENGTH_BAR), matchWidth())
+            addView(statRow(getString(R.string.stat_health), maxHealth(progress.level), max = MAX_HEALTH_BAR, tint = getColor(R.color.stat_health_c)), matchWidth(dp(8)))
+            addView(statRow(getString(R.string.stat_sleep), vitals.sleep, tint = getColor(R.color.stat_sleep_c)), matchWidth())
+            addView(statRow(getString(R.string.stat_hunger), vitals.hunger, tint = getColor(R.color.stat_hunger_c)), matchWidth())
+            addView(statRow(getString(R.string.stat_sadness), vitals.sadness, tint = getColor(R.color.stat_sadness_c)), matchWidth())
+            addView(statRow(getString(R.string.stat_joy), vitals.joy, tint = getColor(R.color.stat_joy_c)), matchWidth())
+            addView(statRow(getString(R.string.stat_strength), strengthOf(species, progress.level, progress.vitals), max = MAX_STRENGTH_BAR, tint = getColor(R.color.stat_strength_c)), matchWidth())
 
             addView(
                 Button(context).apply {

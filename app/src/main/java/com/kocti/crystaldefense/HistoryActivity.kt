@@ -48,11 +48,11 @@ class HistoryActivity : Activity() {
 
     private fun render() {
         content.removeAllViews()
-        content.addView(label(getString(R.string.history_title), sizeSp = 24f, bold = true))
+        content.addView(screenTitle(getString(R.string.history_title)))
         content.addView(monthBar(), matchWidth(dp(8)))
         content.addView(weekHeader(), matchWidth(dp(8)))
         for (week in monthGrid(month).chunked(DAYS_IN_WEEK)) content.addView(weekRow(week), matchWidth(dp(CELL_GAP_DP)))
-        content.addView(label(getString(R.string.history_legend, STEPS_PER_GROWTH), sizeSp = 13f), matchWidth(dp(8)))
+        content.addView(label(getString(R.string.history_legend, STEPS_PER_GROWTH), sizeSp = 13f, color = getColor(R.color.text_muted)), matchWidth(dp(8)))
         content.addView(dayCard(), matchWidth(dp(12)))
         content.addView(monthCard(), matchWidth(dp(12)))
     }
@@ -68,7 +68,7 @@ class HistoryActivity : Activity() {
             },
         )
         addView(
-            label(monthTitle(month), sizeSp = 18f, bold = true).apply { gravity = Gravity.CENTER },
+            label(monthTitle(month), sizeSp = 18f, bold = true, color = getColor(R.color.accent)).apply { gravity = Gravity.CENTER },
             LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f),
         )
         addView(

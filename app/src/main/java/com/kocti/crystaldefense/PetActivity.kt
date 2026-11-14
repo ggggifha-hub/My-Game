@@ -7,6 +7,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
+import android.content.res.ColorStateList
 import android.graphics.SurfaceTexture
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -123,6 +124,8 @@ class PetActivity : Activity(), SensorEventListener {
         panelAction = findViewById(R.id.panelAction)
         store = StepStore(this)
         progress.max = STEPS_PER_GROWTH
+        progress.progressTintList = ColorStateList.valueOf(getColor(R.color.accent))
+        progress.progressBackgroundTintList = ColorStateList.valueOf(0x40FFFFFF)
         applySystemBarInsets(findViewById(R.id.hud))
 
         menu = findViewById(R.id.menu)

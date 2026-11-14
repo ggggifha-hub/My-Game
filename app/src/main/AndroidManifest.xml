@@ -32,7 +32,7 @@
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+        android:theme="@style/AppTheme">
 
         <!-- На телефонах без ARCore питомец показывается поверх обычной камеры. -->
         <meta-data android:name="com.google.ar.core" android:value="optional" />

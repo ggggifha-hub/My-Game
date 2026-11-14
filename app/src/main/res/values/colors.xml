@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="screen_background">#FF0F1726</color>
-    <color name="screen_text">#FFFFFFFF</color>
-    <color name="history_empty">#FF1C2638</color>
-    <color name="history_steps">#FF24507A</color>
-    <color name="history_goal">#FF2E7D4F</color>
+    <!-- Базовые тона экрана -->
+    <color name="screen_background">#FF0E1626</color>
+    <color name="screen_text">#FFF4F7FB</color>
+    <color name="text_muted">#FFAEBDD6</color>
+
+    <!-- Акценты -->
+    <color name="accent">#FF38D3C6</color>
+    <color name="accent_dark">#FF1E8F88</color>
+    <color name="accent2">#FFF6903E</color>
+
+    <!-- Панели и кнопки -->
+    <color name="panel">#FF18294A</color>
+    <color name="panel_stroke">#FF2B4063</color>
+    <color name="btn_fill">#FF1A2D50</color>
+    <color name="btn_fill_pressed">#FF244063</color>
+    <color name="btn_stroke">#FF2E6E74</color>
+    <color name="btn_text">#FFEAF7FF</color>
+
+    <!-- Цвета показателей существа -->
+    <color name="stat_health_c">#FF45D98A</color>
+    <color name="stat_sleep_c">#FF5AA9F6</color>
+    <color name="stat_hunger_c">#FFF6A33E</color>
+    <color name="stat_sadness_c">#FFA99BF2</color>
+    <color name="stat_joy_c">#FFF2C94C</color>
+    <color name="stat_strength_c">#FFF2704B</color>
+
+    <!-- Календарь шагов -->
+    <color name="history_empty">#FF18294A</color>
+    <color name="history_steps">#FF2C6FB0</color>
+    <color name="history_goal">#FF2E9E63</color>
 </resources>

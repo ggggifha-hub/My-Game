@@ -43,14 +43,14 @@
                 android:id="@+id/levelText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/text_muted"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/vitalsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/text_muted"
                 android:textSize="15sp" />
         </LinearLayout>
 

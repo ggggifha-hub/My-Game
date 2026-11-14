@@ -101,8 +101,8 @@ class BattleActivity : Activity(), NearbyBattle.Listener {
     }
 
     private fun buildScreen(content: LinearLayout) {
-        content.addView(label(getString(R.string.battle_title), sizeSp = 24f, bold = true))
-        content.addView(label(getString(R.string.battle_rules)), matchWidth(dp(4)))
+        content.addView(screenTitle(getString(R.string.battle_title)))
+        content.addView(label(getString(R.string.battle_rules), color = getColor(R.color.text_muted)), matchWidth(dp(4)))
         status = label("", bold = true)
         content.addView(status, matchWidth(dp(12)))
         searchButton = Button(this).apply {
