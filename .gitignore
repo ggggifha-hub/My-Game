@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+.kotlin/
+build/
+local.properties
+*.iml
+captures/
+.DS_Store
+
+# Исходный ассет-пак Quaternius (CC0) — в сборке не нужен, используются модели в app/src/main/assets
+third_party/

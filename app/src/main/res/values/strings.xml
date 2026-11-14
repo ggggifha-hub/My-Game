@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шагомонстры</string>
+
+    <string name="steps_today">Сегодня: %1$d шагов</string>
+    <string name="pet_level">%1$s, уровень %2$d. До роста сегодня: %3$d шагов</string>
+    <string name="pet_vitals">Голод: %1$d · Сон: %2$d</string>
+    <string name="pet_vitals_asleep">Спит. Голод: %1$d · Сон: %2$d</string>
+    <string name="pet_lost_level">%1$s ослаб от голода или без сна. Уровень %2$d</string>
+    <string name="pet_put_to_sleep">Уложить спать</string>
+    <string name="dev_clock">Время в приложении: %1$s</string>
+    <string name="bedtime_channel">Время сна</string>
+    <string name="bedtime_title">%1$s хочет спать</string>
+    <string name="bedtime_text">Уложите существо спать, иначе к полуночи у него кончится сон</string>
+    <string name="skip_hour">+1 час (разработчик)</string>
+    <string name="test_bedtime">Уведомление о сне (разработчик)</string>
+    <string name="pet_grew">%1$s наелся и вырос! Уровень %2$d</string>
+    <string name="pet_evolved">Новая форма: %1$s! Уровень %2$d</string>
+    <string name="pet_hint_find_floor">Наведите камеру на пол рядом с собой и медленно поводите телефоном</string>
+    <string name="pet_hint_look_down">Посмотрите под ноги справа: питомец идёт рядом</string>
+    <string name="pet_hint_emulator">Режим эмулятора: питомец гуляет сам, перетаскивание поворачивает камеру</string>
+    <string name="menu">☰ Меню</string>
+    <string name="menu_title">Меню</string>
+    <string name="open_characters">Персонажи</string>
+    <string name="open_battle">Бой с другим игроком</string>
+    <string name="characters_title">Персонажи</string>
+    <string name="characters_rules">Шаги кормят только выбранное существо. Рост — за 10 000 шагов с ним за день. Новые формы — на уровнях 3, 7, 12 и 18. Голод: 100 — сыт, 0 — голоден. Днём он падает на 10 в час, а 5000 шагов наполняют его полностью. С 21:00 до 9:00 можно уложить существо спать, иначе к полуночи кончится сон. Оно просыпается в 9:00. Если сон на нуле, уложить можно и днём: существо встанет, когда сон восстановится до 100. Днём без еды теряется 1 уровень за 3 часа, ночью — 1 уровень за всю ночь.</string>
+    <string name="character_form">%1$s, уровень %2$d</string>
+    <string name="character_chain">Формы: %1$s</string>
+    <string name="character_next_form">Следующая форма на уровне %1$d</string>
+    <string name="character_final_form">Это последняя форма</string>
+    <string name="character_beats">При равной силе побеждает: %1$s</string>
+    <string name="character_select">Выбрать</string>
+    <string name="character_selected">Выбран</string>
+    <string name="stat_health">ХП</string>
+    <string name="stat_sleep">Сон</string>
+    <string name="stat_hunger">Голод</string>
+    <string name="stat_sadness">Грусть</string>
+    <string name="stat_joy">Радость</string>
+    <string name="stat_strength">Сила</string>
+    <string name="history_title">Календарь шагов</string>
+    <string name="history_previous">◀</string>
+    <string name="history_next">▶</string>
+    <string name="history_previous_month">Предыдущий месяц</string>
+    <string name="history_next_month">Следующий месяц</string>
+    <string name="history_legend">Зелёный день — %1$d шагов и больше. ▲ — существо выросло, ▼ — уменьшилось. Нажмите на день, чтобы увидеть подробности.</string>
+    <string name="history_cell">%1$s, шагов: %2$d</string>
+    <string name="history_no_change_day">В этот день уровни не менялись</string>
+    <string name="history_no_change_month">За месяц уровень не менялся</string>
+    <string name="history_month_title">Итог: %1$s</string>
+    <string name="history_month_steps">Всего шагов: %1$d</string>
+    <string name="history_creature">%1$s (%2$s): уровень %3$d, рост %4$d см</string>
+    <string-array name="history_steps">
+        <item>%1$d шаг</item>
+        <item>%1$d шага</item>
+        <item>%1$d шагов</item>
+    </string-array>
+    <string-array name="history_grew">
+        <item>%1$s вырос на %2$d уровень</item>
+        <item>%1$s вырос на %2$d уровня</item>
+        <item>%1$s вырос на %2$d уровней</item>
+    </string-array>
+    <string-array name="history_shrank">
+        <item>%1$s уменьшился на %2$d уровень</item>
+        <item>%1$s уменьшился на %2$d уровня</item>
+        <item>%1$s уменьшился на %2$d уровней</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </string-array>
+    <string-array name="month_names">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="month_names_of">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+    <string name="battle_title">Бой</string>
+    <string name="battle_rules">Побеждает тот, у кого больше сила. При равной силе Драко побеждает Гоблина, Гоблин — Морока, Морок — Поганыша, Поганыш — Драко. Откройте этот экран на обоих телефонах рядом друг с другом.</string>
+    <string name="battle_you">Ваш боец: %1$s</string>
+    <string name="battle_fighter">%1$s, ур. %2$d, сила %3$d</string>
+    <string name="battle_search">Искать соперника рядом</string>
+    <string name="battle_stop_search">Остановить поиск</string>
+    <string name="battle_searching">Ищем игроков рядом. Вас тоже могут вызвать…</string>
+    <string name="battle_challenge">Вызвать: %1$s</string>
+    <string name="battle_waiting">Ждём ответа: %1$s</string>
+    <string name="battle_challenged_title">Вызов на бой</string>
+    <string name="battle_challenged">Вас вызывает игрок рядом: %1$s</string>
+    <string name="battle_accept">Принять</string>
+    <string name="battle_decline">Отказаться</string>
+    <string name="battle_connected">Соединение есть, готовим бой…</string>
+    <string name="battle_declined">Соперник отказался или соединение не удалось</string>
+    <string name="battle_lost_connection">Соединение потеряно</string>
+    <string name="battle_bad_data">Соперник прислал неверные данные. Возможно, у него другая версия приложения</string>
+    <string name="battle_permission_needed">Без разрешения на устройства поблизости поиск соперника не работает</string>
+    <string name="battle_search_failed">Поиск не запустился (код %1$d). Проверьте Bluetooth и Wi-Fi. На эмуляторе это ожидаемо</string>
+    <string name="battle_go">Бой!</string>
+    <string name="battle_round_you">Раунд %1$d: ваш удар</string>
+    <string name="battle_round_them">Раунд %1$d: удар соперника</string>
+    <string name="battle_round_both">Раунд %1$d: столкновение</string>
+    <string name="battle_damage">-%1$d</string>
+    <string name="battle_health">ХП %1$d/%2$d</string>
+    <string name="battle_continue">Продолжить</string>
+    <string name="battle_side_you">Вы: %1$s</string>
+    <string name="battle_side_them">Соперник: %1$s</string>
+    <string name="battle_won">Победа!</string>
+    <string name="battle_lost">Поражение</string>
+    <string name="battle_draw">Ничья</string>
+    <string name="battle_reason_type">Силы равны, решила цепочка: %1$s → %2$s</string>
+    <string name="battle_reason_level">Силы равны, решил уровень</string>
+    <string name="battle_reason_strength">Решила сила</string>
+    <string name="battle_reason_equal">Силы равны</string>
+    <string name="battle_bot">Тестовый бой с ботом (разработчик)</string>
+    <string name="dev_mode">Режим разработчика</string>
+    <string name="dev_mode_off">Выключить режим разработчика</string>
+    <string name="dev_code_title">Введите код из 8 цифр</string>
+    <string name="dev_code_enter">Войти</string>
+    <string name="dev_code_wrong">Неверный код, попробуйте ещё раз</string>
+    <string name="dev_tools">Инструменты разработчика</string>
+    <string name="add_growth">+10 000 шагов (разработчик)</string>
+    <string name="reset_steps">Обнулить шаги и уровни (разработчик)</string>
+    <string name="reset_steps_confirm">Обнулить шаги за сегодня и уровни всех существ? Это нельзя отменить.</string>
+    <string name="reset_steps_yes">Обнулить</string>
+    <string name="reset_steps_no">Отмена</string>
+    <string name="close">Закрыть</string>
+    <string name="steps_no_sensor">На этом устройстве нет датчика шагов</string>
+    <string name="steps_no_permission">Разрешите «Физическую активность», чтобы считать шаги</string>
+    <string name="add_steps">+1000 шагов (разработчик)</string>
+    <string name="play_game">Мини-игра</string>
+
+    <string name="hud_score">Очки: %1$d</string>
+    <string name="hud_wave">Волна %1$d</string>
+
+    <string name="hint_scan">Медленно поводите телефоном, чтобы найти пол</string>
+    <string name="hint_place">Коснитесь подсвеченной поверхности, чтобы поставить кристалл</string>
+    <string name="hint_shoot">Касайтесь экрана, чтобы сбивать дронов</string>
+    <string name="hint_place_emulator">Режим без AR: коснитесь экрана, чтобы поставить кристалл</string>
+    <string name="hint_shoot_emulator">Касание — выстрел, перетаскивание — поворот камеры</string>
+    <string name="hint_enemy_left">◀ Дроны слева</string>
+    <string name="hint_enemy_right">Дроны справа ▶</string>
+    <string name="hint_next_wave">Приготовьтесь: следующая волна</string>
+
+    <string name="tracking_lost">Позиция потеряна. Наведите камеру на прежнее место</string>
+    <string name="tracking_dark">Слишком темно. Включите свет</string>
+    <string name="tracking_motion">Двигайте телефон медленнее</string>
+    <string name="tracking_features">Наведите камеру на поверхность с узором или предметами</string>
+    <string name="tracking_camera">Камера занята другим приложением</string>
+
+    <string name="game_over">Кристалл разрушен</string>
+    <string name="game_over_stats">Очки: %1$d\nВолна: %2$d\nРекорд: %3$d</string>
+    <string name="restart">Играть снова</string>
+
+    <string name="permission_needed">Игре нужна камера, чтобы показывать дополненную реальность. Разрешите доступ в настройках приложения.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="ar_fallback">ARCore недоступен: существо показано поверх камеры, но пол не распознаётся</string>
+    <string name="arcore_unsupported">Это устройство не поддерживает ARCore, поэтому игра на нём не запустится.</string>
+    <string name="arcore_declined">Для игры нужны «Сервисы Google Play для AR». Установите их и откройте игру снова.</string>
+    <string name="arcore_update">Обновите «Сервисы Google Play для AR» и откройте игру снова.</string>
+    <string name="arcore_failed">Не удалось запустить AR: %1$s</string>
+    <string name="gles3_required">Игре нужен OpenGL ES 3.0, а это устройство его не предоставляет.</string>
+    <string name="camera_failed">Не удалось открыть камеру. Закройте другие приложения с камерой и откройте игру снова.</string>
+</resources>
